@@ -2,8 +2,6 @@
 
 Aplicação web full-stack simples para gerenciamento de tarefas, construída com **Flask** no backend e **HTMX** no frontend para interações dinâmicas sem recarregar a página.
 
----
-
 ## ⚙️ Tecnologias utilizadas
 
 - **Flask** – Backend leve e eficiente com Python
@@ -12,8 +10,6 @@ Aplicação web full-stack simples para gerenciamento de tarefas, construída co
 - **SQLite** – Banco de dados leve e local
 - **Jinja2** – Engine de templates do Flask
 - **TailwindCSS** – Estilização moderna e responsiva
-
----
 
 ## ✅ Funcionalidades
 
