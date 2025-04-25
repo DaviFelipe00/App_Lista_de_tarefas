@@ -1,19 +1,27 @@
-# 📝 Lista de Tarefas – Flask + HTMX
+# 📝 Lista de Tarefas — *Flask + HTMX*
 
-Aplicação web full-stack simples para gerenciamento de tarefas, construída com **Flask** no backend e **HTMX** no frontend para interações dinâmicas sem recarregar a página.
+Uma aplicação **web full-stack** para gerenciamento simples de tarefas, desenvolvida com **Flask** no backend e **HTMX** no frontend, proporcionando interações dinâmicas sem recarregamento da página.
 
-## ⚙️ Tecnologias utilizadas
+<div align="center">
+  <img src="https://github.com/DaviFelipe00/App_Lista_de_tarefas/blob/main/assets/print_2.png?raw=true" alt="Demonstração da aplicação" width="80%"/>
+</div>
 
-- **Flask** – Backend leve e eficiente com Python
-- **HTMX** – Requisições assíncronas com HTML puro
-- **SQLAlchemy** – ORM para integração com banco de dados
-- **SQLite** – Banco de dados leve e local
-- **Jinja2** – Engine de templates do Flask
-- **TailwindCSS** – Estilização moderna e responsiva
+---
+
+## ⚙️ Tecnologias Utilizadas
+
+- 🐍 **Flask** — Microframework Python para construção do backend  
+- 🔄 **HTMX** — Requisições assíncronas usando apenas HTML  
+- 🛠️ **SQLAlchemy** — ORM para manipulação de banco de dados com Python  
+- 🗃️ **SQLite** — Banco de dados leve e embutido  
+- 🎨 **Jinja2** — Template engine nativa do Flask  
+- 💅 **TailwindCSS** — Estilo moderno, leve e responsivo  
+
+---
 
 ## ✅ Funcionalidades
 
-- Adicionar novas tarefas
-- Marcar tarefas como concluídas
-- Excluir tarefas de forma instantânea
-- Interface leve e responsiva
+- ➕ Adicionar novas tarefas com apenas um clique  
+- ✔️ Marcar tarefas como concluídas  
+- 🗑️ Excluir tarefas de forma instantânea e sem recarregar a página  
+- 📱 Interface responsiva e intuitiva  
