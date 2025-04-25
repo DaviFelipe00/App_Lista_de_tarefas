@@ -1,0 +1,18 @@
+<li id="task-{{ task.id }}" class="flex justify-between bg-white p-2 rounded shadow">
+    <span class="{% if task.done %}line-through text-gray-400{% endif %}">
+        {{ task.description }}
+    </span>
+    <div class="flex gap-2">
+        <button 
+            hx-post="/toggle/{{ task.id }}" 
+            hx-target="#task-{{ task.id }}" 
+            hx-swap="outerHTML"
+            class="text-green-600">✔</button>
+
+        <button 
+            hx-post="/delete/{{ task.id }}" 
+            hx-target="#task-{{ task.id }}" 
+            hx-swap="delete" 
+            class="text-red-500">🗑</button>
+    </div>
+</li>

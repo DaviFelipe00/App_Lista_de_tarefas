@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Tarefas</title>
+    <script src="https://unpkg.com/htmx.org@1.9.2"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center px-4">
+    <div class="w-full max-w-md bg-white shadow-lg rounded-xl p-6">
+        <h1 class="text-2xl font-bold mb-4 text-center text-gray-800">📋 Lista de Tarefas</h1>
+
+        <form hx-post="/add" hx-target="#task-list" hx-swap="beforeend" class="flex mb-6">
+            <input 
+                type="text" 
+                name="description" 
+                placeholder="Digite uma nova tarefa..." 
+                class="flex-grow px-4 py-2 rounded-l-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                required>
+            <button 
+                type="submit" 
+                class="bg-blue-500 text-white px-4 py-2 rounded-r-md hover:bg-blue-600 transition">
+                Adicionar
+            </button>
+        </form>
+
+        <ul id="task-list" class="space-y-2">
+            {% for task in tasks %}
+                {% include '_task.html' %}
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>
